@@ -1,7 +1,11 @@
 # Using-JWT-to-authenticate-and-authorize-requests-in-Postman
 
-Choose the edit option on the collection and write the following code into the "pre-request scripts":
-![Screenshot__12_](/uploads/-/system/personal_snippet/13/09a74b6348e86d8c0600865f5dd972b1/Screenshot__12_.png)
+Choose the edit option on the collection
+
+![1](/1.png)
+
+
+write the following code into the "pre-request scripts":
 ```
 let email  = pm.variables.get("email");
 let password = pm.variables.get("password");
@@ -24,10 +28,10 @@ pm.sendRequest({
         pm.globals.set("token", res.json().token);
   });
 ```
-![Screenshot__13_](/uploads/-/system/personal_snippet/13/9b783276ab9ad23881141b35dae521c1/Screenshot__13_.png)
+![2](/2.png)
 
 In the variables tab, define the parameters as shown in the image below
-![Screenshot__15_](/uploads/-/system/personal_snippet/13/d5adc075a3294eeb28f4e429e053203b/Screenshot__15_.png)
+![3](/3.png)
 
 In the final step, make the following settings
-![Screenshot__14_](/uploads/-/system/personal_snippet/13/f99bed1ab07342c3437858ec5d81fdd4/Screenshot__14_.png)
+![4](/4.png)
